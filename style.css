@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  gap: 16px;
+}
+
+
+/* Aqui estilizamos a barra de navegação do site */
+.navbar {
+  overflow: hidden;
+  background-image: linear-gradient(#f36513, #ff914d);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 140px;
+
+}
+
+.mustache img {
+  height: 250px;
+  width: auto;
+  margin-top: 35px;
+}
+
+.navbar a {
+  font-size: 25px;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+/* Aqui estilizamos a primeira seção com slide do site */
+
+.slideshow-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin: auto;
+
+}
+
+.mySlides {
+  display: none;
+  height: auto;
+}
+
+.fade {
+  animation: fade 4 infinite;
+  -webkit-animation: fade 4 infinite;
+}
+
+@keyframes fade {
+  0%,100% { opacity: 0 }
+  20%,80% { opacity: 1 }
+}
+
+/* Section ver mais */
+
+.cards {
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.card {
+  background-color: #fff;
+  width: 200px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px black;
+  flex-basis: calc(33.33% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card img {
+  width: 410px;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius:12px;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 50%;
+}
+
+.card h1 {
+  font-size: 30px;
+}
+
+.card h2 {
+  font-size: 20px;
+}
+
+.card button {
+  background-color: #2192ff ;
+  height: 30px;
+  border: none;
+  padding: 4px;
+  width: 200px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.card button:hover {
+  background-color: #1964a9 ;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+
+
+/* Aqui estilizamos a seção sobre do site */
+
+
+#section-sobre {
+  display: flex;
+}
+
+
+/*Aqui estilizamos o rodapé do site */
+
+footer {
+  margin-top: auto;
+
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+  text-decoration: none;
+}
+/*Aqui estilizamos o rodapé do site */
+
+/* footer.css */
+
+/* footer.css */
+footer {
+  background-image: linear-gradient(#f36513, #ff914d);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10%;
+}
+
+.footer-section {
+  flex-basis: 30%;
+}
+
+.footer-section h2 {
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a i {
+  margin-right: 8px;
+}
+
+.footer-bottom {
+  margin-top: 20px;
+}
+
+/* Adicione esta parte se você estiver usando Font Awesome para os ícones das redes sociais */
+.fab {
+  font-family: 'Font Awesome 5 Brands';
+}
+
+
+
+
+  

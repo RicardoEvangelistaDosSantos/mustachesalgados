@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Aqui estilizamos a barra de navegação do site */
+
+.navbar {
+  overflow: hidden;
+  background-image: linear-gradient(#f36513, #ff914d);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 140px;
+
+}
+
+.mustache img {
+  height: 250px;
+  width: auto;
+  margin-top: 35px;
+}
+
+.navbar a {
+  font-size: 25px;
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.2);
+}
+
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Arial";
+  gap: 16px;
+}
+
+.cards {
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+
+.card {
+  background-color: #fff;
+  width: 200px;
+  height: 500px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px black;
+  flex-basis: calc(33.33% - 10px);
+  margin: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card img {
+  width: 410px;
+  height: auto;
+  border-top-left-radius: 12px;
+  border-top-right-radius:12px;
+}
+
+.card div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 50%;
+}
+
+.card h1 {
+  font-size: 30px;
+}
+
+.card h2 {
+  font-size: 20px;
+}
+
+.card button {
+  background-color: #2192ff ;
+  height: 30px;
+  border: none;
+  padding: 4px;
+  width: 200px;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 10px;
+}
+
+.card button:hover {
+  background-color: #1964a9 ;
+  transition: transform 0.3s ease-in-out;
+  transform: scale(1.05);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
