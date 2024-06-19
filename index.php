@@ -127,6 +127,27 @@ if (isset($_GET['id'])) {
             </div>
         </div>
     </main>
+    <footer>
+    <div class="footer-container">
+        <div class="footer-section1">
+            <h2>Contato</h2>
+            <p>Email: contato@mustachesalgados.com</p>
+            <p>  Telefone: (99) 9999-9999</p>
+            <p>Endereço: QSE 9, lt. 9, lj. 9, Brasília, DF, 12345-678  </p>
+        </div>
+        <div class="footer-section2">
+            <h2>Redes Sociais</h2>
+            <div class="imgicons">
+                <img src="imgicons/instagram.png" alt="icon">
+                <img src="imgicons/facebook.png" alt="icon">
+                <img src="imgicons/whatsapp.png" alt="icon">
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2024 | Criado por Ricardo Evangelista
+    </div>
+  </footer>
 </body>
 
 </html>

@@ -55,28 +55,52 @@ if (isset($_GET['update'])) {
         </nav>
     </header>
   <main>
-    <ul>
-      <?php if (count($productsInCart) <= 0) : ?>
-        <div class="no-product">
-          <h1>Nenhum produto adicionado no carrinho</h1>
-        </div>
-      <?php endif; ?>
+    <div class="cart-geral">
+        <ul>
+          <?php if (count($productsInCart) <= 0) : ?>
+            <div class="no-product">
+              <h1>Nenhum produto adicionado no carrinho</h1>
+            </div>
+          <?php endif; ?>
 
-      <?php foreach ($productsInCart as $product) : ?>
-        <li>
-          <?php echo $product->getName(); ?>
-          <form action="">
-            <input type="hidden" name="update" value="<?php echo $product->getId(); ?>">
-            <input type="text" name="qty" value="<?php echo $product->getQuantity() ?>">
-          </form>
-          Preço: R$ <?php echo number_format($product->getPrice(), 2, ',', '.') ?>
-          Subtotal: R$ <?php echo number_format($product->getPrice() * $product->getQuantity(), 2, ',', '.') ?>
-          <a href="?remove=<?php echo $product->getId(); ?>">Remover</a>
-        </li>
-        <li>Total: R$ <?php echo number_format($cart->getTotal(), 2, ',', '.'); ?></li>
-      </ul>
-    <?php endforeach; ?>
+          <?php foreach ($productsInCart as $product) : ?>
+            <li>
+              <?php echo $product->getName(); ?>
+              <form action="">
+                <input type="hidden" name="update" value="<?php echo $product->getId(); ?>">
+                <input type="text" name="qty" value="<?php echo $product->getQuantity() ?>">
+              </form>
+              Preço: R$ <?php echo number_format($product->getPrice(), 2, ',', '.') ?>
+              Subtotal: R$ <?php echo number_format($product->getPrice() * $product->getQuantity(), 2, ',', '.') ?>
+              <a href="?remove=<?php echo $product->getId(); ?>">Remover</a>
+            </li>
+          </ul>
+          <li>Total: R$ <?php echo number_format($cart->getTotal(), 2, ',', '.'); ?></li>
+          <?php endforeach; ?>
+    </div>
+
   </main>
+  <footer>
+    <div class="footer-container">
+        <div class="footer-section1">
+            <h2>Contato</h2>
+            <p>Email: contato@mustachesalgados.com</p>
+            <p>  Telefone: (99) 9999-9999</p>
+            <p>Endereço: QSE 9, lt. 9, lj. 9, Brasília, DF, 12345-678  </p>
+        </div>
+        <div class="footer-section2">
+            <h2>Redes Sociais</h2>
+            <div class="imgicons">
+                <img src="imgicons/instagram.png" alt="icon">
+                <img src="imgicons/facebook.png" alt="icon">
+                <img src="imgicons/whatsapp.png" alt="icon">
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        © 2024 | Criado por Ricardo Evangelista
+    </div>
+  </footer>
 
 </body>
 

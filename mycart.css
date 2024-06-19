@@ -7,16 +7,21 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  gap: 16px;
 }
 
+/* Aqui estilizamos a barra de navegação do site */
 .navbar {
   overflow: hidden;
-  background-image: linear-gradient(#f36513, #ff914d);
+  background-image: linear-gradient(#f4610d, #fbad7c);
   display: flex;
   align-items: center;
   justify-content: space-around;
   height: 140px;
-
+  position: fixed ;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
 }
 
 .mustache img {
@@ -24,7 +29,7 @@ body {
   width: auto;
   margin-top: 35px;
 }
-  
+
 .navbar a {
   font-size: 25px;
   float: left;
@@ -32,26 +37,114 @@ body {
   text-align: center;
   text-decoration: none;
 }
-  
+
 .navbar a:hover {
   transition: transform 0.3s ease-in-out;
   transform: scale(1.2);
 }
 
-.no-product {
+
+main {
+  margin-top: 150px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  height: 100vh;
+  font-family: "Arial";
+  gap: 16px;
 }
-  
+
+
+
+/*Estilização dos produtos*/
+
+.cart-geral {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  border-bottom: 20px;
+}
+
+.cart-geral .no-product h1 {
+  text-align: center;
+  color:  #fbad7c;
+}
+
+.cart-geral ul {
+  list-style-type: none;
+}
+
+.cart-geral li {
+  padding: 10px;
+  border-bottom: 1px solid #fbad7c
+}
+
+.cart-geral li:last-child {
+  border-bottom: none;
+}
+
+.cart-geral form {
+  display: inline-block;
+}
+
+.cart-geral input[type="text"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.cart-geral a {
+  color: #ff0202;
+  text-decoration: none;
+}
+
+.cart-geral a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+/*Aqui estilizamos o rodapé do site */
+
 footer {
-  margin-top: auto;
-  background-image: linear-gradient(#f36513, #ff914d);
-  color: #fff;
+  background-image: linear-gradient(#fbad7c,#f4610d);
+  color: white;
+  padding: 20px 0;
   text-align: center;
-  padding: 40px;
+  border-bottom: 0;
+  bottom: 0;
 }
+
+.footer-bottom {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-section2 {
+  justify-content: center;
+}
+
+.imgicons {
+  display: flex;
+  justify-content: center;
+}
+.footer-section2 img {
+  width: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 15px;
+}
+
 
 
 
